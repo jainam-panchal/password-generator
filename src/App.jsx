@@ -9,7 +9,7 @@ function App() {
   const passwordRef = useRef(null)
 
   const generatePassword = useCallback(() => {
-    var passDict = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    var passDict = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvqxyz'
     if (includeNumbers) passDict += '0123456789'
     if (includeSpecialCharacters) passDict += '!"#$%&\'()*+,-./:;<=>?@[]^_`{|}~'
 
